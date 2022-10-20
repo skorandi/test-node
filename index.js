@@ -1,5 +1,5 @@
 import express from 'express';
-import {MongoClient} from 'mongodb';
+import { MongoClient } from 'mongodb';
 
 const app = express();
 const PORT = 4000;
@@ -18,9 +18,9 @@ async function main() {
 }
 
 app.get('/', (req, res) => {
-    res.json("I love docker!");
+  res.json("I love this docker container!");
 });
 
 app.listen(PORT, () => {
-    console.log('Your server is running on PORT:',PORT);
+  console.log('Your server is running on PORT:', PORT);
 });
